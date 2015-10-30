@@ -1,0 +1,14 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Average Word Length</h1>
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          Enter text:<br>
+          {{ form.text(size=1000) }}<br>
+      </p>
+      <p><input type="submit" value="Sign In"></p>
+  </form>
+{% endblock %}
